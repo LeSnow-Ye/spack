@@ -34,6 +34,6 @@ class RpcsvcProto(AutotoolsPackage):
         # Add 'cpp' path for rpcgen
         filter_file(
             "rpcgen/rpcgen",
-            f"rpcgen/rpcgen -Y {self['compiler-wrapper'].bin_dir}",
+            f"rpcgen/rpcgen -Y {self['compiler-wrapper'].bin_dir()}",
             "rpcsvc/Makefile",
         )
