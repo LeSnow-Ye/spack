@@ -26,4 +26,3 @@ class Liburing(AutotoolsPackage):
     depends_on("cxx", type="build")  # only for tests, built automatically.
 
     requires("platform=linux")
-
